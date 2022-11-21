@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+
+    <meta charset='UTF-8'>
+    <title>Ergial - CINFA</title>
+
+    <meta name="robots" content="noindex">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+
+    <style>
+        * {
+            font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .dropdown-menu.show {
+            -webkit-animation: fadeIn 0.3s alternate;
+            /* Safari 4.0 - 8.0 */
+            animation: fadeIn 0.3s alternate;
+        }
+        
+        .nav-item.dropdown.dropdown-mega {
+            position: static;
+        }
+        
+        .nav-item.dropdown.dropdown-mega .dropdown-menu {
+            width: 90%;
+            top: auto;
+            left: 5%;
+        }
+        
+        .navbar-toggler {
+            border: none;
+            padding: 0;
+            outline: none;
+        }
+        
+        .navbar-toggler:focus {
+            box-shadow: none;
+        }
+        
+        .navbar-toggler .hamburger-toggle {
+            position: relative;
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            z-index: 11;
+            float: right;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger {
+            position: absolute;
+            transform: translate(-50%, -50%) rotate(0deg);
+            left: 50%;
+            top: 50%;
+            width: 50%;
+            height: 50%;
+            pointer-events: none;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger span {
+            width: 100%;
+            height: 4px;
+            position: absolute;
+            background: #333;
+            border-radius: 2px;
+            z-index: 1;
+            transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
+            left: 0px;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger span:first-child {
+            top: 10%;
+            transform-origin: 50% 50%;
+            transform: translate(0% -50%) !important;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
+            top: 50%;
+            transform: translate(0, -50%);
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger span:last-child {
+            left: 0px;
+            top: auto;
+            bottom: 10%;
+            transform-origin: 50% 50%;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger.active span {
+            position: absolute;
+            margin: 0;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
+            top: 45%;
+            transform: rotate(45deg);
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
+            left: 50%;
+            width: 0px;
+        }
+        
+        .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
+            top: 45%;
+            transform: rotate(-45deg);
+        }
+        
+        .icons {
+            display: inline-flex;
+            margin-left: auto;
+        }
+        
+        .icons a {
+            transition: all 0.2s ease-in-out;
+            padding: 0.2rem 0.4rem;
+            color: #ccc !important;
+            text-decoration: none;
+        }
+        
+        .icons a:hover {
+            color: white;
+            text-shadow: 0 0 30px white;
+        }
+        
+        .dropdown-menu {
+            --bs-dropdown-color: #fff;
+            --bs-dropdown-bg: #7e3c89;
+            --bs-dropdown-link-color: #fff;
+        }
+    </style>
+
+
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
+    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
+</head>
+
+<body>
+    <header class="py-3 border-bottom" style="background-color: #7e3c89; color:#fff ">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a href="/ " class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
+                <img src="images/cinfa/LOGOCINFA.png " alt=" ">
+            </a>
+            <div>
+                <a href="/cinfa-profesional.html " class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
+                    <img src="images/cinfa/btn-profesional.png " alt=" ">
+                </a>
+            </div>
+        </div>
+    </header>
+    <nav class="navbar navbar-expand-lg " style="background-color: #ededed; color:#000000 ">
+        <div class="container d-flex flex-wrap justify-content-center">
+            <a class="navbar-brand" href="/cinfa.html">
+                <img src="images/cinfa/LOGOERGIAL.png " alt=" ">
+            </a>
+            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#navbar-content ">
+                        <div class="hamburger-toggle ">
+                            <div class="hamburger ">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </button>
+            <div class="collapse navbar-collapse " id="navbar-content ">
+                <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            ¿QUÉ ES ERGIAL?
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">¿Para qué sirve?</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Composición</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">¿Cómo actua?</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">¿Cómo se toma?</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Preguntas Frecuentes</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            EVIDENCIA CLÍNICA
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">Papel terapéutico  de Ergial®</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ergial® en RFL</a></li>
+                            <li>
+                                <hr class="dropdown-divider ">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Ergial® en ERGE</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            MATERIALES PARA TUS PACIENTES
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">Consejos para evitar el reflujo</a></li>
+                            <li><a class="dropdown-item" href="#">Modelo de receta Ergial®</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="cinfa-ayudasDiagnostico.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                            AYUDAS PARA EL DIAGNÓSTICO
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="cinfa-ayudasDiagnostico.html">Métodos diagnósticos</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">SOBRE CINFA</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="my-5 ">
+        <div class="container ">
+            <img src="images/cinfa/ayudasDiagnostico.jpg" alt=" " class="img-fluid" style="margin-top: -80px;">
+        </div>
+    </section>
+
+    <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <img src="images/cinfa/logoErgialFoot.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-4">
+                    <p class="d-inline">
+                        Privacidad
+                    </p>
+                    <span class="px-4">
+                            |        
+                    </span>
+                    <p class="d-inline">
+                        Aviso Legal
+                    </p>
+                    <span class="px-4">
+                            |        
+                    </span>
+                    <p class="d-inline">
+                        Política de Cookies
+                    </p>
+                </div>
+                <div class="col-4 text-center">
+                    <img src="images/cinfa/logoCinfaFoot.png" alt="" class="img-fluid">
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-8">
+
+                    <small>&copy; 2020-2022 by LABORATORIOS CINFA. All rights reserved.</small>
+                </div>
+                <div class="col-4">
+                    <div class="d-inline">
+                        <img src="images/cinfa/telIcon.png" alt="" class="img-fluid">
+                        <span>
+                            +34 948 33 38 11
+                        </span>
+                    </div>
+                    <div class="d-inline mx-2">
+                        &nbsp;
+                    </div>
+                    <div class="d-inline pl-4">
+                        <img src="images/cinfa/mailIcon.png" alt="" class="img-fluid">
+                        <span>
+                            sac@cinfa.com
+                        </span>
+                    </div>
+    </footer>
+
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.addEventListener('click', function(e) {
+            // Hamburger menu
+            if (e.target.classList.contains('hamburger-toggle')) {
+                e.target.children[0].classList.toggle('active');
+            }
+        })
+    </script>
+</body>
+
+</html>
