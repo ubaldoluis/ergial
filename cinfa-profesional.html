@@ -144,12 +144,23 @@
             --bs-dropdown-bg: #7e3c89;
             --bs-dropdown-link-color: #fff;
         }
+        
+        #btn-back-to-top {
+            background-color: #7e3c89!important;
+            border-color: #7e3c89;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none;
+        }
+        
+        footer a,
+        footer a:hover {
+            color: #fff;
+            text-decoration: none;
+        }
     </style>
 
-
-    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeConsoleRunner-6bce046e7128ddf9391ccf7acbecbf7ce0cbd7b6defbeb2e217a867f51485d25.js"></script>
-    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-550eae0ce567d3d9182e33cee4e187761056020161aa87e3ef74dc467972c555.js"></script>
-    <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRuntimeErrors-4f205f2c14e769b448bcf477de2938c681660d5038bc464e3700256713ebe261.js"></script>
 </head>
 
 <body>
@@ -192,15 +203,15 @@
                             EVIDENCIA CLÍNICA
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html">Papel terapéutico  de Ergial®</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#papelTerapeutico">Papel terapéutico  de Ergial®</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="cinfa-evidenciaRFL.html">Ergial® en RFL</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaRFL">Ergial® en RFL</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="cinfa-evidenciaERGE.html">Ergial® en ERGE</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaERGE">Ergial® en ERGE</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -209,7 +220,7 @@
                         </a>
                         <ul class="dropdown-menu shadow">
                             <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html">Consejos para evitar el reflujo</a></li>
-                            <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html">Modelo de receta Ergial®</a></li>
+                            <!-- <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html#modeloReceta">Modelo de receta Ergial®</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -235,6 +246,18 @@
         </div>
     </section>
 
+    <div class="row" style="background-color:#32b44a ;">
+        <div class="text-center d-inline-flex justify-content-center">
+            <div>
+                <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
+            </div>
+            <div class="pt-2 text-white">
+                Este producto sanitario tiene efectos secundarios y/o contraindicaciones, lea el etiquetado y las instrucciones de uso antes de utilizarlo. CPS-PS0000-00/22-NA
+            </div>
+        </div>
+    </div>
+
+
     <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
         <div class="container">
             <div class="row">
@@ -243,19 +266,28 @@
                 </div>
                 <div class="col-4">
                     <p class="d-inline">
-                        Privacidad
+                        <a href="politica-privacidad.html">
+                            Privacidad
+                        </a>
+
                     </p>
                     <span class="px-4">
                             |        
                     </span>
                     <p class="d-inline">
-                        Aviso Legal
+                        <a href="aviso-legal.html">
+                            Aviso Legal
+                        </a>
+
                     </p>
                     <span class="px-4">
                             |        
                     </span>
                     <p class="d-inline">
-                        Política de Cookies
+                        <a href="politica-de-cookies.html">
+                            Política de Cookies
+                        </a>
+
                     </p>
                 </div>
                 <div class="col-4 text-center">
@@ -286,7 +318,10 @@
                     </div>
     </footer>
 
-    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
         document.addEventListener('click', function(e) {
@@ -296,6 +331,35 @@
             }
         })
     </script>
+
+    <script>
+        //Get the button
+        let mybutton = document.getElementById("btn-back-to-top");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() {
+            scrollFunction();
+        };
+
+        function scrollFunction() {
+            if (
+                document.body.scrollTop > 20 ||
+                document.documentElement.scrollTop > 20
+            ) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+        // When the user clicks on the button, scroll to the top of the document
+        mybutton.addEventListener("click", backToTop);
+
+        function backToTop() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
+    </script>
+
 </body>
 
 </html>
