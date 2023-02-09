@@ -169,7 +169,7 @@
             background-color: #7e3c89!important;
             border-color: #7e3c89;
             position: fixed;
-            bottom: 20px;
+            bottom: 60px;
             right: 20px;
             display: none;
         }
@@ -179,6 +179,9 @@
             color: #fff;
             text-decoration: none;
             font-size: 0.9rem;
+        }
+        footer{
+            margin-bottom: 1.5rem!important;
         }
         
         .btn-cinfa {
@@ -199,6 +202,15 @@
             --bs-btn-padding-x: 2rem;
             --bs-btn-border-radius: 1rem;
             text-transform: uppercase;
+        }
+        #CPS{
+            display: block;
+            position: fixed;
+            bottom: 0;
+            z-index: 1500;
+            width: 100%;
+            margin-left: 0;
+
         }
     </style>
 
@@ -344,16 +356,6 @@
         </div>
     </section>
 
-    <div class="row" style="background-color:#32b44a ;">
-        <div class="text-center d-inline-flex justify-content-center">
-            <div>
-                <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
-            </div>
-            <div class="pt-2 text-white">
-                Este producto sanitario tiene efectos secundarios y/o contraindicaciones, lea el etiquetado y las instrucciones de uso antes de utilizarlo. CPS-PS0000-00/22-NA
-            </div>
-        </div>
-    </div>
 
     <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
         <div class="container">
@@ -413,7 +415,21 @@
                             sac@cinfa.com
                         </span>
                     </div>
-    </footer>
+
+                </div>
+            </div>
+
+        </footer>
+        <div class="row" style="background-color:#32b44a ;" id="CPS">
+            <div class="text-center d-inline-flex justify-content-center">
+                <div>
+                    <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
+                </div>
+                <div class="pt-2 text-white">
+                    Este producto sanitario tiene efectos secundarios y/o contraindicaciones, lea el etiquetado y las instrucciones de uso antes de utilizarlo. CPS-PS0000-00/22-NA
+                </div>
+            </div>
+        </div>
 
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
