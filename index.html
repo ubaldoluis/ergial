@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang='es'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
 
@@ -10,50 +11,58 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <style>
         * {
             font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
         }
-        
+
+        :root {
+            --cinfacolor: #7e3c89;
+
+        }
+
         .dropdown-menu.show {
             -webkit-animation: fadeIn 0.3s alternate;
             /* Safari 4.0 - 8.0 */
             animation: fadeIn 0.3s alternate;
         }
-        
+
         .nav-item.dropdown.dropdown-mega {
             position: static;
         }
-        
+
         .nav-item.dropdown.dropdown-mega .dropdown-menu {
             width: 90%;
             top: auto;
             left: 5%;
         }
-        
+
         .navbar-toggler {
             border: none;
             padding: 0;
             outline: none;
         }
-        
+
         .navbar-toggler:focus {
             box-shadow: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle {
             position: relative;
             display: inline-block;
@@ -62,7 +71,7 @@
             z-index: 11;
             float: right;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger {
             position: absolute;
             transform: translate(-50%, -50%) rotate(0deg);
@@ -72,7 +81,7 @@
             height: 50%;
             pointer-events: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span {
             width: 100%;
             height: 4px;
@@ -83,107 +92,108 @@
             transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
             left: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:first-child {
             top: 10%;
             transform-origin: 50% 50%;
             transform: translate(0% -50%) !important;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
             top: 50%;
             transform: translate(0, -50%);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:last-child {
             left: 0px;
             top: auto;
             bottom: 10%;
             transform-origin: 50% 50%;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span {
             position: absolute;
             margin: 0;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
             top: 45%;
             transform: rotate(45deg);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
             left: 50%;
             width: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
             top: 45%;
             transform: rotate(-45deg);
         }
-        
+
         .icons {
             display: inline-flex;
             margin-left: auto;
         }
-        
+
         .icons a {
             transition: all 0.2s ease-in-out;
             padding: 0.2rem 0.4rem;
             color: #ccc !important;
             text-decoration: none;
         }
-        
+
         .icons a:hover {
             color: white;
             text-shadow: 0 0 30px white;
         }
-        
+
         .dropdown-menu {
             --bs-dropdown-color: #fff;
             --bs-dropdown-bg: #7e3c89;
             --bs-dropdown-link-color: #fff;
         }
-        
+
         .modal-header {
             border-bottom: none;
             text-align: center;
             display: block;
             font-style: italic;
         }
-        
+
         .modal-footer {
             border-top: none;
             justify-content: space-between;
             padding: 0 5em;
             padding-bottom: 2em;
         }
-        
+
         .modal-footer .btn-primary {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             font-style: italic;
         }
-        
+
         #btn-back-to-top {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             position: fixed;
             bottom: 60px;
             right: 20px;
             display: none;
         }
-        
+
         footer a,
         footer a:hover {
             color: #fff;
             text-decoration: none;
             font-size: 0.9rem;
         }
+
         /* footer{
             margin-bottom: 1.5rem!important;
         } */
-        
+
         .btn-cinfa {
             --bs-btn-bg: #a56baa;
             --bs-btn-border-color: #a56baa;
@@ -203,7 +213,8 @@
             --bs-btn-border-radius: 1rem;
             text-transform: uppercase;
         }
-        #CPS{
+
+        #CPS {
             display: block;
             position: fixed;
             bottom: 0;
@@ -211,6 +222,68 @@
             width: 100%;
             margin-left: 0;
 
+        }
+
+        .ergialList {
+            list-style-type: none;
+            display: inline;
+            width: auto;
+            overflow: hidden;
+            margin-top: 0px;
+        }
+
+        .ergialList li {
+            padding-left: 25px;
+            /* margin-top: 10px; */
+            margin-left: 0px;
+            line-height: 1.5em;
+            background: url('images/cinfa/bullet.png') left 7px no-repeat;
+        }
+
+        .ergialList li:first-child {
+            margin-top: 0;
+        }
+
+        .headerCinfa {
+            color: #7e3c89;
+            font-weight: bold;
+        }
+
+        .mt-n6 {
+            margin-top: -3rem !important;
+        }
+
+        .card {
+            background-color: #ededed;
+        }
+
+        /* .ergialList li:before {
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background-image: url('images/cinfa/bullet.png');
+            background-size: cover;
+            background-position: left top;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+        } */
+        .faqTittle {
+            padding: 15px 20px 0px 20px;
+            border: 1px solid #a56baa;
+            color: #a56baa;
+            font-weight: bold;
+        }
+
+        .arrowDown {
+            width: 0;
+            height: 0;
+            border-left: 15px solid transparent;
+            border-right: 15px solid transparent;
+
+            border-top: 15px solid #a56baa;
+            float: right;
         }
     </style>
 
@@ -224,7 +297,8 @@
                 <img src="images/cinfa/LOGOCINFA.png " alt=" ">
             </a>
             <div>
-                <a href="/cinfa-profesional.html " class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
+                <a href="/cinfa-profesional.html "
+                    class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
                     <img src="images/cinfa/btn-profesional.png " alt=" " class="img-fluid">
                 </a>
             </div>
@@ -235,19 +309,21 @@
             <a class="navbar-brand" href="/">
                 <img src="images/cinfa/LOGOERGIAL.png " alt=" ">
             </a>
-            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#navbar-content ">
-                        <div class="hamburger-toggle ">
-                            <div class="hamburger ">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </button>
+            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse "
+                data-bs-target="#navbar-content ">
+                <div class="hamburger-toggle ">
+                    <div class="hamburger ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
             <div class="collapse navbar-collapse " id="navbar-content ">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿QUÉ ES ERGIAL?
                         </a>
                         <ul class="dropdown-menu shadow">
@@ -283,7 +359,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/cinfa-queEs.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="/cinfa-queEs.html" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿QUÉ ES EL REFLUJO?
                         </a>
                         <ul class="dropdown-menu shadow">
@@ -291,7 +368,8 @@
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-queEs.html#diferencias">Diferencia entre ERGE y RFL</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-queEs.html#diferencias">Diferencia entre ERGE y
+                                    RFL</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
@@ -299,23 +377,28 @@
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-queEs.html#causas">¿Qué puede provocar el reflujo?</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-queEs.html#causas">¿Qué puede provocar el
+                                    reflujo?</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/cinfa-comoEvitar.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="/cinfa-comoEvitar.html" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿CÓMO EVITAR EL REFLUJO?
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#alimentacion">Consejos dietéticos</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#alimentacion">Consejos
+                                    dietéticos</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#habitos">Consejos sobre hábitos y estilo de vida</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#habitos">Consejos sobre hábitos y
+                                    estilo de vida</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">SOBRE CINFA</a>
+                        <a class="nav-link" aria-current="page" href="https://www.cinfa.com/sobre-cinfa/">SOBRE
+                            CINFA</a>
                     </li>
                 </ul>
             </div>
@@ -323,52 +406,618 @@
     </nav>
 
     <section class="my-5 ">
-        <div class="container ">
+        <div class="container-md container-fluid ">
             <div id="queEs" class="text-center">
-                <img src="images/cinfa/erialQueEs.jpg" alt=" " class="img-fluid">
+                <div class="container-md container-sm-fluid text-center">
+                    <!-- <div class="row justify-content-md-center">
+                        <div class="col-12 col-lg-4 text-md-end px-0">
+                            <img src="images/cinfa/bodegonSobre.png" alt="" style="width: 340px;">
+                        </div>
+                        <div class="col-12 col-lg-4 text-md-end px-0">
+                            <img src="images/cinfa/bodegonSobre.png" alt="" style="width: 340px;">
+                        </div>
+                        <div class="col-12 col-lg-4 text-start">
+                            <img src="images/cinfa/logoErgialTop.png" alt="" style="width: 230px;">
+                            <p>
+                                <strong>
+                                    Ergial® es un producto sanitario para el tratamiento del reflujo gastroesofágico y
+                                    el
+                                    reflujo faringolaríngeo.
+                                </strong>
+                            </p>
+                            <p class="py-0 my-0">
+                                Ergial®, gracias a su novedosa combinación de componentes, presenta una doble acción:
+                            </p>
+                            <ul class="ergialList my-0 py-0">
+                                <li class="fw-bold">
+                                    Protege y favorece la reparación de las mucosas faríngea, laríngea y esofágica.
+                                </li>
+                                <li class="fw-bold">
+                                    Contribuye a reducir los síntomas del reflujo.
+                                </li>
+                                <img src="images/cinfa/pastilla.png" alt="" class="img-fluid">
 
-                <a href="assets/prospecto.pdf" target="_blank" class="btn btn-large btn-cinfa mt-5 mb-4">
-                    INSTRUCCIONES DE USO
-                </a>
-            </div>
-            <div id="paraQueSirve" class="mt-4">
-                <img src="images/cinfa/paraQueSirve.jpg" alt=" " class="img-fluid">
+                            </ul>
+                        </div>
+                    </div> -->
 
-            </div>
-            <div id="comoActua" class="mt-5">
-                <img src="images/cinfa/comoActua.jpg" alt=" " class="img-fluid">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-7 text-start">
+                            <img src="images/cinfa/intro.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
 
-            </div>
-            <div id="composicion" class="mt-5">
-                <img src="images/cinfa/composicion.jpg" alt=" " class="img-fluid">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start">
+                            <p>
+                                Se requiere un diagnóstico médico inicial de la enfermedad por reflujo gastroesofágico
+                                y/o reflujo faringolaríngeo. El tratamiento no debe durar más de 30 días seguidos. No
+                                utilice en caso de hipersensibilidad conocida a los componentes. Lea las instrucciones
+                                de uso antes de utilizarlo.
+                            </p>
+                        </div>
+                    </div>
 
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <a href="assets/prospecto.pdf" target="_blank" class="btn btn-large btn-cinfa mt-3 mb-4">
+                                INSTRUCCIONES DE USO
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div id="comoSeToma" class="mt-5 text-center">
-                <img src="images/cinfa/comoTomar.jpg" alt=" " class="img-fluid">
-                <a href="assets/prospecto.pdf" target="_blank" class="btn btn-large btn-cinfa mt-5 mb-4">
-                    INSTRUCCIONES DE USO
-                </a>
-            </div>
-            <div id="preguntasFrecuentes" class="my-4">
-                <img src="images/cinfa/preguntasFrecuentes.jpg" alt=" " class="img-fluid">
-            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container ">
+            <div id="paraQueSirve" class="text-center">
+                <div class="container text-center">
 
-            <div id="evidenciaCientifica" class="my-5">
-                <img src="images/cinfa/evidenciaCientifica.jpg" alt=" " class="img-fluid">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start pt-4">
+                            <img src="images/cinfa/paraQueSeUsa.png" alt="" style="width: 40%;">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p class="fw-bolder">
+                                Ergial® ayuda a reducir los síntomas de la enfermedad por reflujo gastroesofágico (ERGE)
+                                y del reflujo faringolaríngeo (RFL):
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col col-lg-3 text-end px-0 ">
+                            <img src="images/cinfa/InfografiaCuerpoHumano.png" alt="" style="width: 300px;">
+                        </div>
+                        <div class="col-12 col-lg-5 text-start d-inline-flex justify-content-center align-items-center">
+                            <!-- <div class="col-6 col-md-4">
+                                <img src="images/cinfa/IconoACIDEZ.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 fw-bold pl-4">
+                                Acidez
+                            </div>
+                            <div class="col-6 col-md-4">
+                                <img src="images/cinfa/iconoODINOFAGIA.png" alt="">
+                            </div>
+                            <div class="col-6 col-md-3 fw-bold pl-4">
+                                Odinofagia
+                            </div>
+                        </div> -->
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="d-flex align-items-center">
+                                            <img src="images/cinfa/iconoesHOME.png" class="img-fluid" alt="Imagen 1">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container ">
+            <div id="comoActua" class="text-center">
+                <div class="container text-center">
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start pt-5">
+                            <img src="images/cinfa/comoActua.png" alt="" style="width: 30%;">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p>
+                                Ergial®, gracias a su novedosa combinación de componentes, ayuda a reducir el reflujo
+                                mediante una barrera estomacal, a la vez que protege y favorece la reparación de las
+                                mucosas faríngea, laríngea y esofágica.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="ratio ratio-16x9">
+
+                                <video poster="images/cinfa/posterVideo.png" controls>
+                                    <source src="assets/ERGIAL_SUBS_MASTER_PACIENTE_SUBS.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container ">
+            <div id="composicion" class="text-center">
+                <div class="container text-center">
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start pt-5">
+                            <img src="images/cinfa/composicion.png" alt="" style="width: 30%;">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p class="fw-bolder">
+                                Ergial® es un producto especialmente indicado en el reflujo faringolaríngeo con una
+                                rápida doble acción:
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-lg-1 text-start text-xs-center px-0">
+                            <img src="images/cinfa/bullet1.png" alt="">
+                        </div>
+                        <div class="col-12 col-lg-5 text-start mx-3">
+                            <h4 class="headerCinfa">
+                                Complejo E-Gastryal®
+                            </h4>
+                            <p class="fw-bold">
+                                Protege y repara la mucosa faringolaríngea y esofágica gracias a su composición con:
+                            </p>
+                            <ul class="ergialList my-0 py-0">
+                                <li>
+                                    <strong>Ácido hialurónico</strong>. Acción reparadora y regeneradora en las mucosas
+                                    faringolaríngea y
+                                    esofágica. Además, ejerce una función protectora frente al daño de enzimas (como la
+                                    pepsina) producidas por el reflujo del contenido gástrico.
+                                </li>
+                                <li>
+                                    <strong>Queratina hidrolizada</strong>. Forma una estructura que potencia el efecto
+                                    barrera y aumenta
+                                    la solidez y la resistencia de E-Gastryal®.
+                                </li>
+                                <li>
+                                    <strong>Gomas Tara y Xantana</strong>. Compuestos naturales capaces de aumentar la
+                                    viscosidad y
+                                    adherencia del complejo, aumentando así la superficie de contacto y el tiempo de
+                                    permanencia en las mucosas de la faringe y el esófago. Esto facilita la acción
+                                    reparadora y regeneradora del ácido hialurónico.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                    <div class="row justify-content-md-center pt-3">
+                        <div class="col-12 col-lg-1 text-start text-xs-center px-0">
+                            <img src="images/cinfa/bullet2.png" alt="">
+                        </div>
+                        <div class="col-12 col-lg-5 text-start mx-3">
+                            <h4 class="headerCinfa">
+                                Alginato de Magnesio
+                            </h4>
+                            <p class="fw-bold">
+                                Efecto barrera que impide el ascenso del contenido gástrico.
+                            </p>
+                            <p>
+                                El alginato de magnesio es una sustancia presente, de manera natural, en algunas algas
+                                pardas. Al entrar en contacto con el contenido gástrico forma un gel que flota en forma
+                                de barrera estable y compacta, reduciendo así el reflujo desde el estómago.
+                            </p>
+                            <p>
+                                Gracias a su alta proporción en ácido manurónico también puede contrarrestar la acción
+                                de la pepsina, una enzima que causa daño a las mucosas de la laringe, la faringe y el
+                                esófago.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div id="comoSeToma" class="text-center">
+                <div class="container text-center">
+
+                    <div class="row justify-content-md-center mb-5 pb-5">
+                        <div class="col-12 col-md-6 text-start pt-5">
+                            <img src="images/cinfa/dosificacion.png" alt="" style="width: 60%;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col col-lg-6 text-end pr-4 d-flex justify-content-end align-items-end">
+
+                            <div class="col-12 col-md-7 mt-6 mr-4">
+                                <div class="card text-center justify-content-end">
+                                    <div class="profile-thumbnail mx-auto mt-n6">
+                                        <img src="images/cinfa/iconoAdultos.png"
+                                            class="card-img-top rounded-circle border-0" alt="Jose Portrait">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold card-title mb-2">Adultos y niños mayores de 12 años: </h5>
+                                        <p class="card-text my-3">
+                                            Tomar 1 sobre de Ergial® después de las comidas
+                                            principales, o siguiendo las instrucciones del médico.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 text-start pl-4 d-flex justify-content-start align-items-start">
+
+                            <div class="col-12 col-md-7 mt-6 ">
+                                <div class="card text-center justify-content-end">
+                                    <div class="profile-thumbnail mx-auto mt-n6">
+                                        <img src="images/cinfa/iconoNinos.png"
+                                            class="card-img-top rounded-circle border-0" alt="Jose Portrait">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="fw-bold card-title mb-2">Niños de entre 3 y 12 años: </h5>
+                                        <p class="card-text my-3">
+                                            Tomar medio sobre (7,5 ml) después de las comidas principales, o siguiendo
+                                            las instrucciones del médico.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p>
+                                Se requiere un diagnóstico médico inicial de la enfermedad por reflujo gastroesofágico
+                                y/o reflujo faringolaríngeo. El tratamiento no debe durar más de 30 días seguidos. No
+                                utilice en caso de hipersensibilidad conocida a los componentes. Lea las instrucciones
+                                de uso antes de utilizarlo.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-center">
+                            <a href="assets/prospecto.pdf" target="_blank" class="btn btn-large btn-cinfa mt-3 mb-4">
+                                INSTRUCCIONES DE USO
+                            </a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container ">
+            <div id="preguntasFrecuentes" class="text-center">
+                <div class="container text-center">
+
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start pt-4">
+                            <img src="images/cinfa/preguntasFrecuentes.png" alt="" style="width: 50%;">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p class="fw-bold">
+                                    ¿Ergial® es un producto apto para diabéticos?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Ergial® es apto para diabéticos; a pesar de su contenido en polisacáridos forma un gel
+                                viscoso que, debido a su mecanismo de acción físico y a sus propiedades mucoadhesivas,
+                                no se absorbe y, por lo tanto, no altera los niveles de glucosa en sangre.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Las personas celíacas pueden consumir Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Si usted es celíaco puede tomar Ergial®. En cumplimiento del Reglamento 828/2014 el
+                                producto incluye la mención "sin gluten" en su etiquetado, ya que analíticamente se
+                                certifica un contenido inferior a 20 mg/kg de gluten.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    Soy intolerante a la lactosa, ¿puedo tomar Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Si usted es intolerante a la lactosa puede tomar Ergial® tal y como se recoge en su
+                                etiquetado. La mención "sin lactosa" acredita ausencia de lactosa siguiendo las
+                                analíticas más sensibles al estado actual de la ciencia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    Estoy embarazada, ¿es seguro tomar Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Ergial® es un producto con un alto perfil de seguridad de sus principios activos. Sin
+                                embargo, no se han realizado estudios específicos en este colectivo de personas, por lo
+                                que se aconseja consultar al médico antes de su uso durante el embarazo y la lactancia.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Mis hijos pequeños pueden tomar Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Sí, Ergial® está recomendado para niños a partir de 3 años.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Puedo tomar Ergial® a la vez que otros tratamientos para el reflujo como omeprazol,
+                                    pantoprazol o esomeprazol? </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Ergial® se puede tomar en monoterapia o en combinación con inhibidores de la bomba de
+                                protones como omeprazol, pantoprazol o esomeprazol. Los estudios llevados a cabo han
+                                demostrado eficacia en ambos casos. A pesar de que, los inhibidores de la bomba de
+                                protones son el tratamiento de elección, un tercio de los pacientes no experimenta
+                                mejoría clínica por lo que la combinación con Ergial® o Ergial® en monoterapia pueden
+                                ser una buena alternativa.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Ergial® es apto para las personas que no pueden tomar bicarbonato?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Sí, entre los componentes de Ergial® no se encuentra el bicarbonato.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Qué diferencia Ergial® de un antiácido?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Los antiácidos ayudan a tratar la acidez gástrica y funcionan neutralizando el ácido
+                                gástrico que causa dicha acidez.
+                                <br>
+                                Por el contrario, Ergial® presenta un doble mecanismo de acción: por un lado, efecto
+                                barrera gracias al alginato de magnesio que impide el ascenso del contenido gástrico y,
+                                por otro lado, protege y favorece la reparación de la mucosa, gracias al complejo
+                                patentado E-Gastryal® con ácido hialurónico y queratina.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Es necesaria receta médica para comprar Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                No. Aunque requiere de un diagnóstico médico inicial de la enfermedad por reflujo
+                                gastroesofágico y/o reflujo faringolaríngeo y el médico se lo puede recetar, el producto
+                                puede comprarse en las farmacias sin necesidad de receta.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿Dónde puedo comprar Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Ergial® es un producto sanitario de venta en farmacias.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <div class="faqTittle">
+                                <p>
+                                    ¿A qué sabe Ergial®?
+                                </p>
+                            </div>
+                            <div class="arrowDown"></div>
+
+                            <p class="ps-4 pe-2 mt-2">
+                                Ergial® contiene un suave aroma de menta, lo que le confiere un agradable y refrescante
+                                sabor, incluso para los niños.
+                            </p>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="container ">
+            <div id="evidenciaCientifica" class="text-center">
+                <div class="container text-center">
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start pt-4">
+                            <img src="images/cinfa/evidenciaClinica.png" alt="" style="width: 90%;">
+                        </div>
+                    </div>
+
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p>
+                                Además de la extensa literatura que avala la eficacia de los principios activos de
+                                Ergial® (ácido hialurónico, queratina hidrolizada, gomas Tara y Xantana, y alginato de
+                                magnesio) en el reflujo faringolaríngeo y en la enfermedad por reflujo gastroesofágico,
+                                se han realizado estudios específicos que avalan la eficacia y seguridad de Ergial®.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 d-md-flex mt-4">
+                            <div class="col-12 col-lg-3 text-start text-xs-center px-0 ">
+                                <img src="images/cinfa/iconoResultados.png" alt="" style="width: 70%;">
+                            </div>
+                            <div
+                                class="col-12 col-lg-9 text-start d-inline-flex justify-content-center align-items-center">
+                                <p class="fw-bold">
+                                    Los pacientes tratados con Ergial® percibieron una reducción del 74% en los síntomas
+                                    asociados a reflujo tras un mes de tratamiento. <sup>[1]</sup>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 d-md-flex mt-4">
+                            <div class="col-12 col-lg-3 text-start text-xs-center px-0 ">
+                                <img src="images/cinfa/iconoParticipantes.png" alt="" style="width: 70%;">
+                            </div>
+                            <div
+                                class="col-12 col-lg-9 text-start d-inline-flex justify-content-center align-items-center">
+                                <p>
+                                    Estudio realizado en 4.418 sujetos cuyas visitas a especialistas en
+                                    otorrinolaringología se llevaron a cabo en 86 centros sanitarios distintos.
+                                    <sup>[2]</sup>
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 d-md-flex mt-4">
+                            <div class="col-12 col-lg-3 text-start text-xs-center px-0 ">
+                                <img src="images/cinfa/iconoMetodologia.png" alt="" style="width: 70%;">
+                            </div>
+                            <div
+                                class="col-12 col-lg-9 text-start d-inline-flex justify-content-center align-items-center">
+                                <p>
+                                    El otorrino recoge los hallazgos tras laringoscopia y los pacientes rellenan un
+                                    cuestionario de sintomatología semanalmente durante un mes.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="row justify-content-md-center">
+                        <div class="col-12 col-md-6 text-start mt-4">
+                            <p class="fst-italic fw-lighter" style="font-size: .8rem;">
+                                (1) Gelardi M., Slvestri M., Ciprandi G. and the relief study group. Relieving
+                                laryngopharyngeal reflux (relief) survey in otolaryngology . The viewpoint of the
+                                otorhinolaryngologist. Journal of biological regulators & homeostatic agents Vol. 32,
+                                nº. 1 (S2), 9-10 (2018); (2) Gelardi M., Slvestri M., Ciprandi G. and the relief study
+                                group. Relieving laryngopharyngeal reflux (relief) survey in otolaryngology . II the
+                                viewpoint of the patient. Journal of biological regulators & homeostatic agents Vol. 32,
+                                nº. 1 (S2), 21 - 28 (2018) </p>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </div>
     </section>
 
-        <div class="row" style="background-color:#32b44a ;">
-            <div class="text-center d-inline-flex justify-content-center">
-                <div>
-                    <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
-                </div>
-                <div class="pt-2 text-white">
-                    Este producto sanitario tiene efectos secundarios y/o contraindicaciones. Lea el etiquetado y las instrucciones de uso antes de utilizarlo. Se requiere un diagnóstico médico inicial de la enfermedad por reflujo gastroesofágico y/o reflujo faringolaríngeo. CPS-PS1748-28/22-NA
-                </div>
+    <div class="row mx-0 mt-5" style="background-color:#32b44a ;">
+        <div class="text-center d-inline-flex justify-content-center">
+            <div>
+                <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
+            </div>
+            <div class="pt-2 text-white">
+                Este producto sanitario tiene efectos secundarios y/o contraindicaciones. Lea el etiquetado y las
+                instrucciones de uso antes de utilizarlo. Se requiere un diagnóstico médico inicial de la enfermedad por
+                reflujo gastroesofágico y/o reflujo faringolaríngeo. CPS-PS1748-28/22-NA
             </div>
         </div>
+    </div>
 
 
     <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
@@ -385,7 +1034,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="aviso-legal.html">
@@ -394,7 +1043,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="politica-de-cookies.html">
@@ -433,8 +1082,8 @@
                 </div>
             </div>
 
-        </footer>
-        <!-- <div class="row" style="background-color:#32b44a ;" id="CPS">
+    </footer>
+    <!-- <div class="row" style="background-color:#32b44a ;" id="CPS">
             <div class="text-center d-inline-flex justify-content-center">
                 <div>
                     <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
@@ -476,7 +1125,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script>
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             // Hamburger menu
             if (e.target.classList.contains('hamburger-toggle')) {
                 e.target.children[0].classList.toggle('active');
@@ -488,7 +1137,7 @@
         let mybutton = document.getElementById("btn-back-to-top");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction();
         };
 
@@ -510,6 +1159,7 @@
             document.documentElement.scrollTop = 0;
         }
     </script>
+
 </body>
 
 </html>

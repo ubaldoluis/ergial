@@ -1,59 +1,63 @@
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang='es'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
 
     <meta charset='UTF-8'>
-    <title>Ergial - CINFA</title>
+    <title>Ergial. Evidencia Clínica - CINFA</title>
 
     <meta name="robots" content="noindex">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <style>
         * {
             font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
         }
-        
+
         .dropdown-menu.show {
             -webkit-animation: fadeIn 0.3s alternate;
             /* Safari 4.0 - 8.0 */
             animation: fadeIn 0.3s alternate;
         }
-        
+
         .nav-item.dropdown.dropdown-mega {
             position: static;
         }
-        
+
         .nav-item.dropdown.dropdown-mega .dropdown-menu {
             width: 90%;
             top: auto;
             left: 5%;
         }
-        
+
         .navbar-toggler {
             border: none;
             padding: 0;
             outline: none;
         }
-        
+
         .navbar-toggler:focus {
             box-shadow: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle {
             position: relative;
             display: inline-block;
@@ -62,7 +66,7 @@
             z-index: 11;
             float: right;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger {
             position: absolute;
             transform: translate(-50%, -50%) rotate(0deg);
@@ -72,7 +76,7 @@
             height: 50%;
             pointer-events: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span {
             width: 100%;
             height: 4px;
@@ -83,68 +87,68 @@
             transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
             left: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:first-child {
             top: 10%;
             transform-origin: 50% 50%;
             transform: translate(0% -50%) !important;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
             top: 50%;
             transform: translate(0, -50%);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:last-child {
             left: 0px;
             top: auto;
             bottom: 10%;
             transform-origin: 50% 50%;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span {
             position: absolute;
             margin: 0;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
             top: 45%;
             transform: rotate(45deg);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
             left: 50%;
             width: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
             top: 45%;
             transform: rotate(-45deg);
         }
-        
+
         .icons {
             display: inline-flex;
             margin-left: auto;
         }
-        
+
         .icons a {
             transition: all 0.2s ease-in-out;
             padding: 0.2rem 0.4rem;
             color: #ccc !important;
             text-decoration: none;
         }
-        
+
         .icons a:hover {
             color: white;
             text-shadow: 0 0 30px white;
         }
-        
+
         .dropdown-menu {
             --bs-dropdown-color: #fff;
             --bs-dropdown-bg: #7e3c89;
             --bs-dropdown-link-color: #fff;
         }
-        
+
         .btn-cinfa {
             --bs-btn-bg: #a56baa;
             --bs-btn-border-color: #a56baa;
@@ -164,44 +168,78 @@
             --bs-btn-border-radius: 1rem;
             text-transform: uppercase;
         }
-        
+
         label {
             color: #7e3c89;
             text-transform: uppercase;
         }
-        
+
         .form-control {
             border-color: #7e3c89;
         }
-        
+
         .modal-header {
             border-bottom: 0px solid #fff;
         }
-        
+
         .modal-footer {
             border-top: 0px solid #fff;
         }
-        
+
         .modal-footer .btn-primary {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             font-style: italic;
         }
-        
+
         #btn-back-to-top {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             position: fixed;
             bottom: 20px;
             right: 20px;
             display: none;
         }
-        
+
         footer a,
         footer a:hover {
             color: #fff;
             text-decoration: none;
             font-size: 0.9rem;
+        }
+
+        .faqTittle {
+            padding: 0px 20px 0px 20px;
+            border: 1px solid #a56baa;
+            font-weight: bold;
+        }
+
+        .faqBlack {
+            padding: 0px 20px 0px 20px;
+            border: 1px solid #7f7f7f;
+            font-weight: bold;
+            color: #fff;
+            background-color: #7f7f7f;
+        }
+
+        .ergialList {
+            list-style-type: none;
+            display: inline;
+            width: auto;
+            overflow: hidden;
+            margin-top: 0px;
+        }
+
+        .ergialList li {
+            padding-left: 25px;
+            /* margin-top: 10px; */
+            margin-left: 0px;
+            line-height: 1.5em;
+            background: url('images/cinfa/bullet.png') left 9px no-repeat;
+        }
+
+        .ergialList li:first-child {
+            margin-top: 0;
         }
     </style>
 
@@ -226,15 +264,16 @@
             <a class="navbar-brand" href="/">
                 <img src="images/cinfa/LOGOERGIAL.png " alt=" ">
             </a>
-            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#navbar-content ">
-                        <div class="hamburger-toggle ">
-                            <div class="hamburger ">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </button>
+            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse "
+                data-bs-target="#navbar-content ">
+                <div class="hamburger-toggle ">
+                    <div class="hamburger ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
             <div class="collapse navbar-collapse " id="navbar-content ">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
                     <li class="nav-item dropdown">
@@ -243,74 +282,372 @@
                         </a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle active" href="cinfa-evidenciaClinica.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle active" href="cinfa-evidenciaClinica.html"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
                             EVIDENCIA CLÍNICA
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#papelTerapeutico">Papel terapéutico  de Ergial®</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#papelTerapeutico">Papel
+                                    terapéutico de Ergial®</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaRFL">Ergial® en RFL</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaRFL">Ergial® en
+                                    RFL</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaERGE">Ergial® en ERGE</a></li>
+                            <li><a class="dropdown-item" href="cinfa-evidenciaClinica.html#evidenciaERGE">Ergial® en
+                                    ERGE</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             MATERIALES PARA TUS PACIENTES
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html#consejosReflujo">Consejos para evitar el reflujo</a></li>
+                            <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html#consejosReflujo">Consejos
+                                    para evitar el reflujo</a></li>
                             <!-- <li><a class="dropdown-item" href="cinfa-mateiralesPacientes.html#modeloReceta">Modelo de receta Ergial®</a></li> -->
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="cinfa-ayudasDiagnostico.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="cinfa-ayudasDiagnostico.html"
+                            data-bs-toggle="dropdown" data-bs-auto-close="outside">
                             AYUDAS PARA EL DIAGNÓSTICO
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="cinfa-ayudasDiagnostico.html">Métodos diagnósticos</a></li>
+                            <li><a class="dropdown-item" href="cinfa-ayudasDiagnostico.html">Métodos diagnósticos</a>
+                            </li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">SOBRE CINFA</a>
+                        <a class="nav-link" aria-current="page" href="https://www.cinfa.com/sobre-cinfa/">SOBRE
+                            CINFA</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section class="my-5 ">
-        <div class="container text-center">
-            <!-- Button trigger modal -->
+    <section class="mt-5" id="papelTerapeutico">
+        <div class="d-flex align-items-center justify-content-center flex-column mx-2 mx-md-0">
+            <div class="col-12 col-lg-6 ">
+                <img src="images/cinfa/papelTerapeuticoHeader.png" alt="" class="img-fluid" style="width: 300px;">
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                Journal of Biological Regulators & Homeostatic Agents
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                focus on gastroesophaGEAL REFLUX (GER) and laryngopharyngeal reflux
+                (LPR): new pragmatic insights in clinical practice
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center text-uppercase">
+                M. GelardI <sup>1</sup> and g. ciprandi <sup>2</sup>
+            </div>
+            <div class="col-12 col-lg-4 mt-3 text-center fst-italic" style="font-size: .8rem;">
+                <sup>1</sup> Section of Otolaryngology, Department of basic Medic Science, Neuroscience and Sensory
+                Organs,
+                University o*f Bari, Italy; <sup>2</sup> Ospedale Policlinico san Martino, Genoa, Italy.
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                Ergial® es un producto sanitario indicado para el <strong>tratamiento de la enfermedad por reflujo
+                    gastroesofágico (ERGE) y el reflujo faringolaríngeo (RFL)</strong>, en formato gel, que combina el
+                novedoso
+                complejo <strong>patentado E-Gastryal®</strong> (ácido hialurónico, queratina hidroliza, goma Tara y
+                goma Xantana) <strong>y alginato de magnesio</strong>.
+            </div>
+            <div class="col-12 col-lg-6 mt-3 pt-4">
+                <div class="d-md-flex align-items-center">
+                    <div class="col-12 col-md-2 text-center pb-4 pb-md-0">
+                        <img src="images/cinfa/iconoAcidoHialuronico.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8 ms-sm-0 ms-md-3 mt-sm-4">
+                        <p>
+                            <strong>Ácido hialurónico (AH).</strong> El AH está caracterizado por sus propiedades
+                            higroscópicas e hidrodinámicas, creando un entorno favorable para la migración celular;
+                            además, el AH, gracias a su actividad antioxidante, ejerce una función protectora frente al
+                            daño oxidativo y las enzimas proteolíticas, como la pepsina.
+                        </p>
 
-            <img src="images/cinfa/papelTerapeutico.jpg" alt=" " class="img-fluid mb-4" id="papelTerapeutico">
-            <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal">
-                SOlICITAR ESTUDIO
-            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 pt-0">
+                <div class="d-md-flex align-items-center">
+                    <div class="col-12 col-md-2 text-center pb-4 pb-md-0">
+                        <img src="images/cinfa/iconoQueratina.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8 ms-sm-0 ms-md-3 mt-sm-4">
+                        <p>
+                            <strong>Queratina hidrolizada.</strong> La queratina hidrolizada forma una estructura
+                            helicoidal que,
+                            gracias a su alto contenido en cisteína, forma puentes disulfuro extremadamente firmes y
+                            capaces de unir las cadenas de aminoácidos, aportando resistencia a los ataques del ácido y
+                            la pepsina estomacal y potenciando el efecto barrera.
+                        </p>
 
-            <img src="images/cinfa/evidenciaRFL.jpg" alt=" " class="img-fluid my-5" id="evidenciaRFL">
-            <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal2">
-                SOlICITAR ESTUDIO
-            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 pt-0">
+                <div class="d-md-flex align-items-center">
+                    <div class="col-12 col-md-2 text-center pb-4 pb-md-0">
+                        <img src="images/cinfa/IconoGomas.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8 ms-sm-0 ms-md-3 mt-sm-4">
+                        <p>
+                            <strong>Gomas Tara y Xantana.</strong> Estas gomas son polisacáridos naturales capaces de
+                            aportar viscosidad a la solución y generar un marco de soporte donde las cadenas de péptidos
+                            de queratina y el ácido hialurónico quedan ancladas, favoreciendo la adhesividad a la
+                            mucosa, aumentando así la superficie de contacto y el tiempo de permanencia en las membranas
+                            de la laringe, la faringe y el esófago. En este contexto, el ácido hialurónico es
+                            extremadamente biodisponible y capaz de llevar a cabo su actividad reparadora y regeneradora
+                            del epitelio dañado.
+                        </p>
 
-            <img src="images/cinfa/evidenciaERGE.jpg" alt=" " class="img-fluid my-5" id="evidenciaERGE">
-            <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal3">
-                SOlICITAR ESTUDIO
-            </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 my-3 pt-0">
+                <div class="d-md-flex align-items-center">
+                    <div class="col-12 col-md-2 text-center pb-4 pb-md-0">
+                        <img src="images/cinfa/iconoAlginato.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-12 col-md-8 ms-sm-0 ms-md-3 mt-sm-4">
+                        <p>
+                            <strong>Alginato de magnesio.</strong> Es un polisacárido aniónico, que se encuentra
+                            naturalmente presente en las algas pardas. Tras interactuar con el contenido gástrico forma
+                            un gel que flota en forma de barrera desplazando la bolsa de ácido (acid pocket) de la unión
+                            esofagogástrica e inhibe selectivamente la pepsina gracias al alto contenido en ácido
+                            manurónico.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
         </div>
-    </section>
+        <div class="d-flex align-items-center justify-content-center flex-column ">
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                <div class="col-12 col-md-12 mt-3 text-center">
+                    <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal">
+                        SOlICITAR ESTUDIO
+                    </button>
+                </div>
+            </div>
+        </div>
 
+    </section>
+    <section class="mt-5" id="evidenciaRFL">
+        <div class="d-flex align-items-center justify-content-center flex-column mx-2 mx-md-0">
+            <div class="col-12 col-lg-6 ">
+                <img src="images/cinfa/evidenciaClinicaErgial.png" alt="" class="img-fluid" style="width: 350px;">
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                Journal of Biological Regulators & Homeostatic Agents
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                RELIEVING LARYNGOPHARINGERAL REFLUX (RELIEF) <br>
+                SURVEY IN OTOLARYNGOLOGY - II THE VIEWPOINT OF THE PATIENT
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center text-uppercase">
+                M. GelardI <sup>1</sup>, M. Silvestri <sup>2</sup>, G. Ciprandi <sup>3</sup> and The Relief Study Group.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 text-center fst-italic" style="font-size: .8rem;">
+                <sup>1</sup> Secion of Otolaryngology, Department pf Basic Medical Science, Neuroscience and Sensory
+                Organs,
+                University of Bari, Italy. <sup>2</sup> Instituto G. Gaslini, Génova, Italy. <sup>3</sup> Ospedale
+                Policlinico San Martino,
+                Genoa, Italy.
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                MATERIALES Y MÉTODOS
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                1.680 participantes con sospecha de reflujo visitados en 86 consultorios de especialistas ORL italianos.
+                Los pacientes fueron tratados con IBPs más un activo adicional <sup>†</sup> o Ergial® en monoterapia
+                durante 4
+                semanas. El tipo de tratamiento lo decidió cada otorrinolaringólogo en función de su criterio. Se
+                utilizó un cuestionario de índice de síntomas de reflujo (RSI) para evaluar semanalmente las
+                características clínicas.
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                RESULTADOS
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqTittle">
+                    Ergial® en monoterapia indujo un 74% de reducción en el cuestionario RSI, siendo más efectivo que
+                    los IBPs + activo adicional <sup>†</sup> a la hora de reducir los síntomas del reflujo
+                    faringolaríngeo. Los
+                    efectos visibles desde la segunda semana indican rapidez del efecto terapéutico.
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqBlack text-center py-2">
+                    Evolución de la puntuación de la sintomatología a nivel global durante <br>
+                    cuatro semanas de tratamiento
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="text-center py-2">
+                    <img src="images/cinfa/grafica1.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 fst-italic">
+                Tendencia de los valores totales de RSI en pacientes tratados con Ergial® en monoterapia y con IBP más
+                activo adicional†.
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqBlack text-center py-2">
+                    Evolución de la puntuación de cada uno de los síntomas tras cuatro semanas de tratamiento
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="text-center py-2">
+                    <img src="images/cinfa/grafica2.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 fst-italic">
+                Porcentaje de reducción de los valores de RSI para cada síntoma individual antes y después de un
+                tratamiento de 4 semanas con
+                Ergial® en monoterapia o con IBPs + activo adicional <sup>†</sup> en pacientes del estudio
+                <strong>RELIEF</strong>.
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0 mb-4 pt-3">
+                Tras 4 semanas de tratamiento con <strong>Ergial®</strong> el global de los <strong>síntomas</strong> de
+                los pacientes tratados <strong>disminuyó
+                    significativamente</strong> destacando principalmente:
+                <ul class="ergialList">
+                    <li>Tos</li>
+                    <li>Exceso de moco en la garganta</li>
+                    <li>Aclaramiento de garganta</li>
+                    <li>Sensación de algo atascado o un nudo en la garganta</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 mt-3">
+                <strong>IBPs:</strong> inhibidores de la bomba de protones; <strong>RFL:</strong> reflujo
+                faringolaríngeo; <strong>RSI:</strong> Reflux Symptom Index.
+            </div>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-column ">
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                <div class="col-12 col-md-12 mt-3 text-center">
+                    <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal2">
+                        SOlICITAR ESTUDIO
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="my-5" id="evidenciaERGE">
+        <div class="d-flex align-items-center justify-content-center flex-column mx-2 mx-md-0">
+            <div class="col-12 col-lg-6 ">
+                <img src="images/cinfa/evidendicaERGE.png" alt="" class="img-fluid" style="width: 350px;">
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                Journal of Biological Regulators & Homeostatic Agents
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                EMERGING from gastroesophageal reflux (emerge): an italian survey II THE viewpoint Of the patient
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center text-uppercase">
+                M. Bianchetti <sup>1</sup>, S. Peralta <sup>2</sup>, R. Nicita <sup>3</sup>, S.E. Aragona <sup>4</sup>,
+                G. Ciprandi <sup>4</sup> and EMERGE Study Group.
+            </div>
+            <div class="col-12 col-lg-4 mt-3 text-center fst-italic" style="font-size: .8rem;">
+                <sup>1</sup> Gastroentorologia, Humanitas Mater Domini, Castellanza (VA), Italy; <sup>2</sup> Endoscopia
+                Digestiva, Policlinico P. Giaccone, Università di Palermo, Italy; <sup>3</sup> Gastroenterologia ASP 5,
+                Reggio Calabria, Italy; <sup>4</sup> Center of Re generative Medicine, Humanitas Mater Domini,
+                Castellanza (VA), Italy .
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                MATERIALES Y MÉTODOS
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                771 participantes con sospecha de ERGE visitados en 56 consultorios gastroenterológicos italianos. Los
+                pacientes fueron tratados con IBPs en monoterapia, IBPs más un activo adicional† o Ergial® en
+                monoterapia durante 4 semanas. El tipo de tratamiento lo decidió cada especialista en función de su
+                criterio. Las visitas incluyeron cuestionarios de Reflux Symptom Index (RSI) para evaluar la evolución
+                clínica.
+            </div>
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold text-uppercase">
+                RESULTADOS
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqTittle">
+                    Ergial® en monoterapia indujo una reducción en el cuestionario RSI, siendo más efectivo que los IBPs
+                    + activo adicional† a la hora de reducir los síntomas del reflujo faringolaríngeo. Los efectos
+                    visibles desde la segunda semana indican rapidez del efecto terapéutico.
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqBlack text-center py-2">
+                    Evolución de la puntuación de la sintomatología a nivel global durante <br>
+                    cuatro semanas de tratamiento
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="text-center py-2">
+                    <img src="images/cinfa/grafica3.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 fst-italic">
+                Valor de RSI total en todos los pacientes al inicio y después de 4 semanas (es decir, al final de la
+                terapia) <strong>(imagen A)</strong>. Tendencia semanal de RSI total a lo largo del tiempo
+                <strong>(imagen B)</strong>.
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="faqBlack text-center py-2">
+                    Evolución de la puntuación de cada uno de los síntomas tras cuatro semanas de tratamiento
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0">
+                <div class="text-center py-2">
+                    <img src="images/cinfa/grafica4.png" alt="" class="img-fluid">
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 mt-3 fst-italic">
+                Porcentajes de reducción de RSI para cada uno de los síntomas en pacientes tratados con Ergial® en
+                monoterapia o IBPs + activo adicional <sup>†</sup>.
+            </div>
+            <div class="col-12 col-lg-6 mt-4 pt-0 mb-4 pt-3">
+                Los <strong>cambios</strong> en los valores RSI antes y después del tratamiento de 4 semanas con Ergial®
+                fueron <strong>estadísticamene significativos</strong> para cada síntoma único, siendo especialmente
+                relevante en:
+                <ul class="ergialList">
+                    <li>Dificultades respiratorias o episodios de asfixia</li>
+                    <li>Dificultad para tragar</li>
+                    <li>Aclaramiento de garganta</li>
+                    <li>Ronquera</li>
+                </ul>
+            </div>
+            <div class="col-12 col-lg-6 mt-3">
+                <strong>IBPs:</strong> inhibidores de la bomba de protones; <strong>RFL:</strong> reflujo
+                faringolaríngeo; <strong>RSI:</strong> Reflux Symptom Index.
+            </div>
+
+        </div>
+        <div class="d-flex align-items-center justify-content-center flex-column ">
+            <div class="col-12 col-lg-6 mt-3 text-center fw-bold">
+                <div class="col-12 col-md-12 mt-3 text-center">
+                    <button type="button" class="btn btn-cinfa" data-bs-toggle="modal" data-bs-target="#vertCentModal3">
+                        SOlICITAR ESTUDIO
+                    </button>
+                </div>
+            </div>
+        </div>
+
+    </section>
     <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
         <div class="container">
             <div class="row">
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <img src="images/cinfa/logoErgialFoot.png" alt="" class="img-fluid">
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <p class="d-inline">
                         <a href="politica-privacidad.html">
                             Privacidad
@@ -318,7 +655,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="aviso-legal.html">
@@ -327,7 +664,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="politica-de-cookies.html">
@@ -336,17 +673,17 @@
 
                     </p>
                 </div>
-                <div class="col-4 text-center">
+                <div class="col-12 col-md-4 text-center">
                     <img src="images/cinfa/logoCinfaFoot.png" alt="" class="img-fluid">
                 </div>
 
             </div>
             <div class="row">
-                <div class="col-8">
+                <div class="col-12 col-md-8">
 
                     <small>&copy; 2020-2023 by LABORATORIOS CINFA. All rights reserved.</small>
                 </div>
-                <div class="col-4">
+                <div class="col-12 col-md-4">
                     <div class="d-inline">
                         <img src="images/cinfa/telIcon.png" alt="" class="img-fluid">
                         <span>
@@ -362,6 +699,9 @@
                             sac@cinfa.com
                         </span>
                     </div>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top">
@@ -374,7 +714,8 @@
         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header d-block ">
-                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de estudios clínicos.</h4>
+                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de
+                        estudios clínicos.</h4>
                     <p class="text-left">
                         <i>
                             Por favor, rellene el siguiente formulario. Todos los campos con (*) son obligatorios.
@@ -383,7 +724,9 @@
                 </div>
 
                 <div class="modal-body px-3">
-                    <form action="assets/papelTerapeutico.pdf" class="row g-3 needs-validation" novalidate target="_blank" id="papelTerapeuticoForm">
+                    <form action="procesador.php" class="row g-3 needs-validation" novalidate target="_blank"
+                        id="papelTerapeuticoForm">
+                        <input type="hidden" name="destino" id="destino" value="assets/papelTerapeutico.pdf">
 
                         <div class="mb-3 ">
                             <label for="exampleFormControlInput1" class="form-label">Nomber y apellidos*</label>
@@ -406,45 +749,52 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">PROFESIÓN*</label>
-                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion" required>
+                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su profesión, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">ESPECIALIDAD</label>
-                            <input type="text" class="form-control" id="especialidad" placeholder="" name="especialidad">
+                            <input type="text" class="form-control" id="especialidad" placeholder=""
+                                name="especialidad">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">número de colegiado*</label>
-                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado" required>
+                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su número de colegiado, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Centro Sanitario</label>
-                            <input type="text" class="form-control" id="centroSanitario" placeholder="" name="centroSanitario">
+                            <input type="text" class="form-control" id="centroSanitario" placeholder=""
+                                name="centroSanitario">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Localidad*</label>
-                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad" required>
+                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su localidad, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Provincia*</label>
-                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia" required>
+                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia"
+                                required>
                             <div class="invalid-feedback">
-                                Introduzca su localidad, por favor.
+                                Introduzca su provincia, por favor.
                             </div>
                         </div>
                 </div>
 
                 <div class="modal-footer justify-content-center">
                     <div class="col-12 text-center">
-                        <button type="submit" class="btn btn-cinfa btn-primary" data-toggle="modal" data-target="#confirm-submit">Enviar</button>
+                        <button type="submit" class="btn btn-cinfa btn-primary" data-toggle="modal"
+                            data-target="#confirm-submit">Enviar</button>
                     </div>
                 </div>
                 </form>
@@ -459,7 +809,8 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header d-block ">
-                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de estudios clínicos.</h4>
+                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de
+                        estudios clínicos.</h4>
                     <p class="text-left">
                         <i>
                             Por favor, rellene el siguiente formulario. Todos los campos con (*) son obligatorios.
@@ -468,7 +819,9 @@
                 </div>
 
                 <div class="modal-body px-3">
-                    <form action="assets/evidenciaRFL.pdf" class="row g-3 needs-validation" novalidate target="_blank" id="evidenciaRFLForm">
+                    <form action="procesador.php" class="row g-3 needs-validation" novalidate target="_blank"
+                        id="evidenciaRFLForm">
+                        <input type="hidden" name="destino" id="destino" value="assets/evidenciaRFL.pdf">
 
                         <div class="mb-3 ">
                             <label for="exampleFormControlInput1" class="form-label">Nomber y apellidos*</label>
@@ -491,38 +844,44 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">PROFESIÓN*</label>
-                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion" required>
+                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su profesión, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">ESPECIALIDAD</label>
-                            <input type="text" class="form-control" id="especialidad" placeholder="" name="especialidad">
+                            <input type="text" class="form-control" id="especialidad" placeholder=""
+                                name="especialidad">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">número de colegiado*</label>
-                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado" required>
+                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su número de colegiado, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Centro Sanitario</label>
-                            <input type="text" class="form-control" id="centroSanitario" placeholder="" name="centroSanitario">
+                            <input type="text" class="form-control" id="centroSanitario" placeholder=""
+                                name="centroSanitario">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Localidad*</label>
-                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad" required>
+                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su localidad, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Provincia*</label>
-                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia" required>
+                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia"
+                                required>
                             <div class="invalid-feedback">
-                                Introduzca su localidad, por favor.
+                                Introduzca su provincia, por favor.
                             </div>
                         </div>
                         <div class="col-12 text-center">
@@ -542,7 +901,8 @@
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header d-block ">
-                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de estudios clínicos.</h4>
+                    <h4 class="modal-title d-inline text-center" id="basicModalLabel">Formulario de solicitud de
+                        estudios clínicos.</h4>
                     <p class="text-left">
                         <i>
                             Por favor, rellene el siguiente formulario. Todos los campos con (*) son obligatorios.
@@ -551,8 +911,9 @@
                 </div>
 
                 <div class="modal-body px-3">
-                    <form action="assets/evidenciaERGE.pdf" class="row g-3 needs-validation" novalidate target="_blank" id="evidenciaERGEForm">
-
+                    <form action="assets/evidenciaERGE.pdf" class="row g-3 needs-validation" novalidate target="_blank"
+                        id="evidenciaERGEForm">
+                        <input type="hidden" name="destino" id="destino" value="assets/evidenciaERGE.pdf">
                         <div class="mb-3 ">
                             <label for="exampleFormControlInput1" class="form-label">Nomber y apellidos*</label>
                             <input type="text" class="form-control" id="nombre" placeholder="" name="nombre" required>
@@ -574,38 +935,44 @@
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">PROFESIÓN*</label>
-                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion" required>
+                            <input type="text" class="form-control" id="profesion" placeholder="" name="profesion"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su profesión, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">ESPECIALIDAD</label>
-                            <input type="text" class="form-control" id="especialidad" placeholder="" name="especialidad">
+                            <input type="text" class="form-control" id="especialidad" placeholder=""
+                                name="especialidad">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">número de colegiado*</label>
-                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado" required>
+                            <input type="text" class="form-control" id="colegiado" placeholder="" name="colegiado"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su número de colegiado, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Centro Sanitario</label>
-                            <input type="text" class="form-control" id="centroSanitario" placeholder="" name="centroSanitario">
+                            <input type="text" class="form-control" id="centroSanitario" placeholder=""
+                                name="centroSanitario">
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Localidad*</label>
-                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad" required>
+                            <input type="text" class="form-control" id="localidad" placeholder="" name="localidad"
+                                required>
                             <div class="invalid-feedback">
                                 Introduzca su localidad, por favor.
                             </div>
                         </div>
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Provincia*</label>
-                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia" required>
+                            <input type="text" class="form-control" id="provincia" placeholder="" name="provincia"
+                                required>
                             <div class="invalid-feedback">
-                                Introduzca su localidad, por favor.
+                                Introduzca su Provincia, por favor.
                             </div>
                         </div>
                         <div class="col-12 text-center">
@@ -623,7 +990,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             // Hamburger menu
             if (e.target.classList.contains('hamburger-toggle')) {
                 e.target.children[0].classList.toggle('active');
@@ -634,7 +1001,7 @@
         var myModal = new bootstrap.Modal(document.getElementById("vertCentModal"), {});
         var myModal2 = new bootstrap.Modal(document.getElementById("vertCentModal2"), {});
         var myModal3 = new bootstrap.Modal(document.getElementById("vertCentModal3"), {});
-        (function() {
+        (function () {
             'use strict'
 
             // Fetch all the forms we want to apply custom Bootstrap validation styles to
@@ -642,8 +1009,8 @@
 
             // Loop over them and prevent submission
             Array.prototype.slice.call(forms)
-                .forEach(function(form) {
-                    form.addEventListener('submit', function(event) {
+                .forEach(function (form) {
+                    form.addEventListener('submit', function (event) {
                         if (!form.checkValidity()) {
                             event.preventDefault()
                             event.stopPropagation()
@@ -655,8 +1022,8 @@
                 })
         })()
 
-        window.addEventListener("DOMContentLoaded", function() {
-            document.getElementById('papelTerapeuticoForm').addEventListener("submit", function(e) {
+        window.addEventListener("DOMContentLoaded", function () {
+            document.getElementById('papelTerapeuticoForm').addEventListener("submit", function (e) {
                 e.preventDefault(); // before the code
                 /* do what you want with the form */
                 if (document.getElementById('papelTerapeuticoForm').checkValidity()) {
@@ -668,7 +1035,7 @@
                 // Should be triggered on form submit
                 console.log('hi');
             })
-            document.getElementById('evidenciaRFLForm').addEventListener("submit", function(e) {
+            document.getElementById('evidenciaRFLForm').addEventListener("submit", function (e) {
                 e.preventDefault(); // before the code
                 /* do what you want with the form */
                 if (document.getElementById('evidenciaRFLForm').checkValidity()) {
@@ -680,7 +1047,7 @@
                 // Should be triggered on form submit
                 console.log('hi');
             })
-            document.getElementById('evidenciaERGEForm').addEventListener("submit", function(e) {
+            document.getElementById('evidenciaERGEForm').addEventListener("submit", function (e) {
                 e.preventDefault(); // before the code
                 /* do what you want with the form */
                 if (document.getElementById('evidenciaERGEForm').checkValidity()) {
@@ -706,7 +1073,7 @@
         let mybutton = document.getElementById("btn-back-to-top");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction();
         };
 

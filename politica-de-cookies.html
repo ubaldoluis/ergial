@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang='en' class=''>
+<html lang='es'>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <head>
 
@@ -10,50 +11,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;700&amp;display=swap">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 
     <style>
         * {
             font-family: "Source Sans Pro", "Roboto", Arial, sans-serif;
         }
-        
+
         @keyframes fadeIn {
             from {
                 opacity: 0;
             }
+
             to {
                 opacity: 1;
             }
         }
-        
+
         .dropdown-menu.show {
             -webkit-animation: fadeIn 0.3s alternate;
             /* Safari 4.0 - 8.0 */
             animation: fadeIn 0.3s alternate;
         }
-        
+
         .nav-item.dropdown.dropdown-mega {
             position: static;
         }
-        
+
         .nav-item.dropdown.dropdown-mega .dropdown-menu {
             width: 90%;
             top: auto;
             left: 5%;
         }
-        
+
         .navbar-toggler {
             border: none;
             padding: 0;
             outline: none;
         }
-        
+
         .navbar-toggler:focus {
             box-shadow: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle {
             position: relative;
             display: inline-block;
@@ -62,7 +66,7 @@
             z-index: 11;
             float: right;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger {
             position: absolute;
             transform: translate(-50%, -50%) rotate(0deg);
@@ -72,7 +76,7 @@
             height: 50%;
             pointer-events: none;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span {
             width: 100%;
             height: 4px;
@@ -83,97 +87,97 @@
             transition: transform 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.2s cubic-bezier(0.77, 0.2, 0.05, 1), all 0.2s ease-in-out;
             left: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:first-child {
             top: 10%;
             transform-origin: 50% 50%;
             transform: translate(0% -50%) !important;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:nth-child(2) {
             top: 50%;
             transform: translate(0, -50%);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger span:last-child {
             left: 0px;
             top: auto;
             bottom: 10%;
             transform-origin: 50% 50%;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span {
             position: absolute;
             margin: 0;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:first-child {
             top: 45%;
             transform: rotate(45deg);
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:nth-child(2) {
             left: 50%;
             width: 0px;
         }
-        
+
         .navbar-toggler .hamburger-toggle .hamburger.active span:last-child {
             top: 45%;
             transform: rotate(-45deg);
         }
-        
+
         .icons {
             display: inline-flex;
             margin-left: auto;
         }
-        
+
         .icons a {
             transition: all 0.2s ease-in-out;
             padding: 0.2rem 0.4rem;
             color: #ccc !important;
             text-decoration: none;
         }
-        
+
         .icons a:hover {
             color: white;
             text-shadow: 0 0 30px white;
         }
-        
+
         .dropdown-menu {
             --bs-dropdown-color: #fff;
             --bs-dropdown-bg: #7e3c89;
             --bs-dropdown-link-color: #fff;
         }
-        
+
         .modal-header {
             border-bottom: none;
             text-align: center;
             display: block;
             font-style: italic;
         }
-        
+
         .modal-footer {
             border-top: none;
             justify-content: space-between;
             padding: 0 5em;
             padding-bottom: 2em;
         }
-        
+
         .modal-footer .btn-primary {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             font-style: italic;
         }
-        
+
         #btn-back-to-top {
-            background-color: #7e3c89!important;
+            background-color: #7e3c89 !important;
             border-color: #7e3c89;
             position: fixed;
             bottom: 20px;
             right: 20px;
             display: none;
         }
-        
+
         footer a,
         footer a:hover {
             color: #fff;
@@ -192,7 +196,8 @@
                 <img src="images/cinfa/LOGOCINFA.png " alt=" ">
             </a>
             <div>
-                <a href="/cinfa-profesional.html " class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
+                <a href="/cinfa-profesional.html "
+                    class="d-flex align-items-center  mb-lg-0 me-lg-auto text-dark text-decoration-none ">
                     <img src="images/cinfa/btn-profesional.png " alt=" " class="img-fluid">
                 </a>
             </div>
@@ -203,19 +208,21 @@
             <a class="navbar-brand" href="/">
                 <img src="images/cinfa/LOGOERGIAL.png " alt=" ">
             </a>
-            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse " data-bs-target="#navbar-content ">
-                        <div class="hamburger-toggle ">
-                            <div class="hamburger ">
-                                <span></span>
-                                <span></span>
-                                <span></span>
-                            </div>
-                        </div>
-                    </button>
+            <button class="navbar-toggler collapsed " type="button " data-bs-toggle="collapse "
+                data-bs-target="#navbar-content ">
+                <div class="hamburger-toggle ">
+                    <div class="hamburger ">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </button>
             <div class="collapse navbar-collapse " id="navbar-content ">
                 <ul class="navbar-nav mr-auto mb-2 mb-lg-0 ">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿QUÉ ES ERGIAL?
                         </a>
                         <ul class="dropdown-menu shadow">
@@ -251,7 +258,8 @@
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/cinfa-queEs.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="/cinfa-queEs.html" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿QUÉ ES EL REFLUJO?
                         </a>
                         <ul class="dropdown-menu shadow">
@@ -259,7 +267,8 @@
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-queEs.html#diferencias">Diferencia entre ERGE y RFL</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-queEs.html#diferencias">Diferencia entre ERGE y
+                                    RFL</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
@@ -267,23 +276,28 @@
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-queEs.html#causas">¿Qué puede provocar el reflujo?</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-queEs.html#causas">¿Qué puede provocar el
+                                    reflujo?</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="/cinfa-comoEvitar.html" data-bs-toggle="dropdown" data-bs-auto-close="outside">
+                        <a class="nav-link dropdown-toggle" href="/cinfa-comoEvitar.html" data-bs-toggle="dropdown"
+                            data-bs-auto-close="outside">
                             ¿CÓMO EVITAR EL REFLUJO?
                         </a>
                         <ul class="dropdown-menu shadow">
-                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#alimentacion">Consejos dietéticos</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#alimentacion">Consejos
+                                    dietéticos</a></li>
                             <li>
                                 <hr class="dropdown-divider ">
                             </li>
-                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#habitos">Consejos sobre hábitos y estilo de vida</a></li>
+                            <li><a class="dropdown-item" href="/cinfa-comoEvitar.html#habitos">Consejos sobre hábitos y
+                                    estilo de vida</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">SOBRE CINFA</a>
+                        <a class="nav-link" aria-current="page" href="https://www.cinfa.com/sobre-cinfa/">SOBRE
+                            CINFA</a>
                     </li>
                 </ul>
             </div>
@@ -294,71 +308,116 @@
         <div class="container ">
             <h1>Política de Cookies</h1>
 
-            <p>Este sitio web utiliza cookies y tecnologías similares que almacenan y recuperan información cuando navegas. En general, estas tecnologías pueden servir para finalidades muy diversas, como, por ejemplo, reconocerte como usuario, obtener información
+            <p>Este sitio web utiliza cookies y tecnologías similares que almacenan y recuperan información cuando
+                navegas. En general, estas tecnologías pueden servir para finalidades muy diversas, como, por ejemplo,
+                reconocerte como usuario, obtener información
                 sobre tus hábitos de navegación o personalizar la forma en que se muestra el contenido.</p>
-            <p>Esta información siempre se recoge de manera anónima, por lo que en ningún caso permite identificar al usuario. Los sistemas la emplean únicamente para reconocer el navegador y algunos datos estadísticos con el fin de mejorar los servicios
+            <p>Esta información siempre se recoge de manera anónima, por lo que en ningún caso permite identificar al
+                usuario. Los sistemas la emplean únicamente para reconocer el navegador y algunos datos estadísticos con
+                el fin de mejorar los servicios
                 que ofrecemos.</p>
             <p>Los usos concretos que hacemos de estas tecnologías se describen a continuación.</p>
             <h3>Cookies técnicas propias</h3>
-            <p>Nuestra web emplea cookies técnicas necesarias para recordar durante su vigencia tus preferencias de navegación y personalizar la forma en la que se te muestra nuestro contenido. Son las siguientes:</p>
+            <p>Nuestra web emplea cookies técnicas necesarias para recordar durante su vigencia tus preferencias de
+                navegación y personalizar la forma en la que se te muestra nuestro contenido. Son las siguientes:</p>
             <ul>
-                <li><strong>moove_gdpr_popup y wordpress_test_cookie: </strong> Cookies de sesión. Estas cookies se utilizan para determinar si el usuario ha aceptado o rechazado las cookies.</li>
-                <li><strong>GPS:</strong> Registra una identificación única en dispositivos móviles para permitir el seguimiento según la ubicación geográfica por GPS.</li>
-                <li><strong>YSC:</strong> Registra una identificación única para mantener estadísticas de qué vídeos de YouTube incrustados en la web ha visto el usuario.</li>
-                <li><strong>VISITOR_ INFO1_LIVE:</strong> Realiza el seguimiento de los videos visitados que se encuentran incrustados en la web.</li>
+                <li><strong>moove_gdpr_popup y wordpress_test_cookie: </strong> Cookies de sesión. Estas cookies se
+                    utilizan para determinar si el usuario ha aceptado o rechazado las cookies.</li>
+                <li><strong>GPS:</strong> Registra una identificación única en dispositivos móviles para permitir el
+                    seguimiento según la ubicación geográfica por GPS.</li>
+                <li><strong>YSC:</strong> Registra una identificación única para mantener estadísticas de qué vídeos de
+                    YouTube incrustados en la web ha visto el usuario.</li>
+                <li><strong>VISITOR_ INFO1_LIVE:</strong> Realiza el seguimiento de los videos visitados que se
+                    encuentran incrustados en la web.</li>
             </ul>
             <h3>Cookies para compartir contenidos en redes sociales</h3>
-            <p>Las web de Cinfa cuenta con botones de «Compartir» para que puedas compartir contenido a través de redes sociales, como Facebook y Twitter. Estas empresas pueden establecer una cookie cuando te conectes a su servicio, pero son mecanismos establecidos
-                y administrados por ellas, por lo que Cinfa no tiene control sobre su configuración. Para obtener más información sobre sus cookies y cómo gestionarlas, te recomendamos que visites sus páginas web. A continuación, te facilitamos directamente
+            <p>Las web de Cinfa cuenta con botones de «Compartir» para que puedas compartir contenido a través de redes
+                sociales, como Facebook y Twitter. Estas empresas pueden establecer una cookie cuando te conectes a su
+                servicio, pero son mecanismos establecidos
+                y administrados por ellas, por lo que Cinfa no tiene control sobre su configuración. Para obtener más
+                información sobre sus cookies y cómo gestionarlas, te recomendamos que visites sus páginas web. A
+                continuación, te facilitamos directamente
                 los accesos a las políticas de cookies de las redes sociales más habituales:</p>
             <ul>
-                <li><a href="https://www.facebook.com/help/cookies/?ref=sitefooter" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-                <li><a href="https://es.linkedin.com/legal/cookie-policy" target="_blank" rel="noopener noreferrer">Linkedin</a></li>
-                <li><a href="https://support.twitter.com/articles/20170521-el-uso-que-hace-twitter-de-cookies-y-tecnologias-similares#" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+                <li><a href="https://www.facebook.com/help/cookies/?ref=sitefooter" target="_blank"
+                        rel="noopener noreferrer">Facebook</a></li>
+                <li><a href="https://es.linkedin.com/legal/cookie-policy" target="_blank"
+                        rel="noopener noreferrer">Linkedin</a></li>
+                <li><a href="https://support.twitter.com/articles/20170521-el-uso-que-hace-twitter-de-cookies-y-tecnologias-similares#"
+                        target="_blank" rel="noopener noreferrer">Twitter</a></li>
             </ul>
             <h3>Cookies de analítica: Google Analytics</h3>
-            <p>En cinfa.com, empleamos Google Analitycs para medir cómo interactúan los usuarios con nuestra web y sitios relacionados, y comprender cómo se relacionan con nosotros por este canal.</p>
-            <p>Google garantiza que las cookies instaladas no incluyen datos personales y que sólo se utilizan con el objetivo de recopilar información para medir las tendencias de búsquedas, las preferencias de usuario, el funcionamiento de la web, la publicidad
+            <p>En cinfa.com, empleamos Google Analitycs para medir cómo interactúan los usuarios con nuestra web y
+                sitios relacionados, y comprender cómo se relacionan con nosotros por este canal.</p>
+            <p>Google garantiza que las cookies instaladas no incluyen datos personales y que sólo se utilizan con el
+                objetivo de recopilar información para medir las tendencias de búsquedas, las preferencias de usuario,
+                el funcionamiento de la web, la publicidad
                 asociada, la ubicación de usuario y otras.</p>
-            <p>En este sentido, es importante recordar que la obtención de esta información sobre el uso de nuestra web la realiza la propia Google, en su propio nombre, no teniendo Cinfa en ningún momento acceso a tal información. Cinfa únicamente puede
-                visualizar la información agregada que le facilita posteriormente Google a través de Google Analitycs y que no está asociada a ninguna dirección IP.</p>
+            <p>En este sentido, es importante recordar que la obtención de esta información sobre el uso de nuestra web
+                la realiza la propia Google, en su propio nombre, no teniendo Cinfa en ningún momento acceso a tal
+                información. Cinfa únicamente puede
+                visualizar la información agregada que le facilita posteriormente Google a través de Google Analitycs y
+                que no está asociada a ninguna dirección IP.</p>
             <ul>
-                <li><strong>_ga, _gat, _gid y otras posibles cookies a cargar por el servicio de monitorización de visitas de Google:</strong> Generar un identificador de usuario único, que es el que se utiliza para hacer recuento de cuántas veces visita
-                    el sitio un usuario, así como la fecha de la primera y la última vez que visitó la web. Registrar la fecha y hora de acceso a cualquiera de las páginas del Sitio. Comprobar la necesidad de mantener la sesión de un usuario abierta o
-                    crear una nueva. Identificar la sesión del usuario, para recoger la ubicación geográfica aproximada del ordenador que accede al Sitio con efectos estadísticos.</li>
+                <li><strong>_ga, _gat, _gid y otras posibles cookies a cargar por el servicio de monitorización de
+                        visitas de Google:</strong> Generar un identificador de usuario único, que es el que se utiliza
+                    para hacer recuento de cuántas veces visita
+                    el sitio un usuario, así como la fecha de la primera y la última vez que visitó la web. Registrar la
+                    fecha y hora de acceso a cualquiera de las páginas del Sitio. Comprobar la necesidad de mantener la
+                    sesión de un usuario abierta o
+                    crear una nueva. Identificar la sesión del usuario, para recoger la ubicación geográfica aproximada
+                    del ordenador que accede al Sitio con efectos estadísticos.</li>
             </ul>
-            <p>Por lo tanto, es directamente Google quien determina la finalidad del tratamiento y uso de la información captada por Google Analytics, así como el funcionamiento y duración de la “cookie”.</p>
-            <p>Para más información de las cookies usadas por Google, puedes visitar <a href="https://www.google.es/intl/es/policies/technologies/types/" target="_blank" rel="noopener noreferrer">Tipos de cookies que utiliza Google</a> . Google presta su
-                servicio de acuerdo a sus <a href="http://www.google.com/intl/es/policies/terms/" target="_blank" rel="noopener noreferrer">condiciones generales</a> y su propia <a href="http://www.google.com/intl/es/policies/privacy/" target="_blank"
+            <p>Por lo tanto, es directamente Google quien determina la finalidad del tratamiento y uso de la información
+                captada por Google Analytics, así como el funcionamiento y duración de la “cookie”.</p>
+            <p>Para más información de las cookies usadas por Google, puedes visitar <a
+                    href="https://www.google.es/intl/es/policies/technologies/types/" target="_blank"
+                    rel="noopener noreferrer">Tipos de cookies que utiliza Google</a> . Google presta su
+                servicio de acuerdo a sus <a href="http://www.google.com/intl/es/policies/terms/" target="_blank"
+                    rel="noopener noreferrer">condiciones generales</a> y su propia <a
+                    href="http://www.google.com/intl/es/policies/privacy/" target="_blank"
                     rel="noopener noreferrer">política de privacidad</a>.</p>
             <h3>Consentimiento o rechazo de “cookies”</h3>
-            <p>Si no estás de acuerdo con que las “cookies” descritas puedan recopilar la información mencionada, puedes rechazar su instalación en el panel de configuración de cookies de esta web. Este panel es accesible desde la ventana emergente de Aceptación/
-                Configuración de cookies la primera vez que accedes a la web y, una vez que ya las has configurado, desde la pestaña de “Política de cookies”, que permanece en la esquina superior derecha de la web.</p>
-            <p>Así mismo, los navegadores disponen de sus propias herramientas para bloquear de forma general las “cookies” de las distintas páginas webs. En los enlaces que siguen, puedes consultar la forma de configurar estas opciones en los navegadores
+            <p>Si no estás de acuerdo con que las “cookies” descritas puedan recopilar la información mencionada, puedes
+                rechazar su instalación en el panel de configuración de cookies de esta web. Este panel es accesible
+                desde la ventana emergente de Aceptación/
+                Configuración de cookies la primera vez que accedes a la web y, una vez que ya las has configurado,
+                desde la pestaña de “Política de cookies”, que permanece en la esquina superior derecha de la web.</p>
+            <p>Así mismo, los navegadores disponen de sus propias herramientas para bloquear de forma general las
+                “cookies” de las distintas páginas webs. En los enlaces que siguen, puedes consultar la forma de
+                configurar estas opciones en los navegadores
                 más habituales.</p>
             <ul>
                 <li><a href="https://support.google.com/chrome/answer/95647?hl=es-419">Google Chrome</a></li>
-                <li><a href="http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-11-win-7">Internet Explorer</a></li>
-                <li><a href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">Mozilla Firefox</a></li>
+                <li><a href="http://windows.microsoft.com/es-es/internet-explorer/delete-manage-cookies#ie=ie-11-win-7">Internet
+                        Explorer</a></li>
+                <li><a
+                        href="https://support.mozilla.org/es/kb/habilitar-y-deshabilitar-cookies-sitios-web-rastrear-preferencias">Mozilla
+                        Firefox</a></li>
                 <li><a href="https://support.apple.com/es-es/HT201265">Safari for IPhone, IPad, IPod</a></li>
                 <li><a href="http://help.opera.com/Windows/8.54/es-ES/index.html">Opera</a></li>
             </ul>
-            <p>En el caso de dispositivos móviles, también es habitual que el navegador disponga de estas opciones en el apartado de Ajustes.</p>
-            <p><strong>Sin embargo, te recordamos que si rechazas las “cookies”, es posible que ciertos servicios y funcionalidades de nuestra web queden deshabilitados, y por lo tanto, no puedas realizar un uso óptimo de este sitio. </strong></p>
+            <p>En el caso de dispositivos móviles, también es habitual que el navegador disponga de estas opciones en el
+                apartado de Ajustes.</p>
+            <p><strong>Sin embargo, te recordamos que si rechazas las “cookies”, es posible que ciertos servicios y
+                    funcionalidades de nuestra web queden deshabilitados, y por lo tanto, no puedas realizar un uso
+                    óptimo de este sitio. </strong></p>
 
         </div>
     </section>
 
-        <div class="row" style="background-color:#32b44a ;">
-            <div class="text-center d-inline-flex justify-content-center">
-                <div>
-                    <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
-                </div>
-                <div class="pt-2 text-white">
-                    Este producto sanitario tiene efectos secundarios y/o contraindicaciones. Lea el etiquetado y las instrucciones de uso antes de utilizarlo. Se requiere un diagnóstico médico inicial de la enfermedad por reflujo gastroesofágico y/o reflujo faringolaríngeo. CPS-PS1748-28/22-NA
-                </div>
+    <div class="row" style="background-color:#32b44a ;">
+        <div class="text-center d-inline-flex justify-content-center">
+            <div>
+                <img src="images/cinfa/faldonIcon.png" height="40" alt="" srcset="">
+            </div>
+            <div class="pt-2 text-white">
+                Este producto sanitario tiene efectos secundarios y/o contraindicaciones. Lea el etiquetado y las
+                instrucciones de uso antes de utilizarlo. Se requiere un diagnóstico médico inicial de la enfermedad por
+                reflujo gastroesofágico y/o reflujo faringolaríngeo. CPS-PS1748-28/22-NA
             </div>
         </div>
+    </div>
 
     <footer class="p-4 text-white" style="background-color: #7e3c89; color:#fff ">
         <div class="container">
@@ -374,7 +433,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="aviso-legal.html">
@@ -383,7 +442,7 @@
 
                     </p>
                     <span class="px-4">
-                            |        
+                        |
                     </span>
                     <p class="d-inline">
                         <a href="politica-de-cookies.html">
@@ -436,13 +495,16 @@
 
                 <div class="modal-body px-2">
                     <p class="px-4">
-                        le comunicamos que la información contenida en este apartado de la web está dirigida exclusivamente a profesionales sanitarios aptos para prescribir o dispensar medicamentos.
+                        le comunicamos que la información contenida en este apartado de la web está dirigida
+                        exclusivamente a profesionales sanitarios aptos para prescribir o dispensar medicamentos.
                     </p>
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" data-bs-dismiss="modal">Si</button>
-                    <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal" data-bs-dismiss="modal">No</button>
+                    <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal"
+                        data-bs-dismiss="modal">Si</button>
+                    <button type="button" class="btn btn-lg btn-primary" data-dismiss="modal"
+                        data-bs-dismiss="modal">No</button>
                 </div>
             </div>
         </div>
@@ -450,7 +512,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
     <script>
-        document.addEventListener('click', function(e) {
+        document.addEventListener('click', function (e) {
             // Hamburger menu
             if (e.target.classList.contains('hamburger-toggle')) {
                 e.target.children[0].classList.toggle('active');
@@ -482,7 +544,7 @@
         let mybutton = document.getElementById("btn-back-to-top");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() {
+        window.onscroll = function () {
             scrollFunction();
         };
 
